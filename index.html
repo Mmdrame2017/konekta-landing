@@ -24,7 +24,7 @@
 /* ========== RESET & BASE ========== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:#E8E8D8;background:#0D0F0A;line-height:1.6;overflow-x:hidden}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:#f0f5ef;background:#0a2e1a;line-height:1.6;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 img{max-width:100%}
 ul{list-style:none}
@@ -38,17 +38,17 @@ ul{list-style:none}
   --secondary-glow:rgba(232,115,37,0.3);
   --accent:#4CAF50;
   --wave:#1B6FD8;
-  --dark:#0D0F0A;
-  --dark-2:#13150D;
-  --dark-3:#1B1E12;
-  --card:#171A0F;
-  --border:rgba(142,168,50,0.15);
-  --border-hover:rgba(142,168,50,0.35);
-  --text:#E8E8D8;
-  --text-muted:#888E6A;
+  --dark:#0a2e1a;
+  --dark-2:#0d3d22;
+  --dark-3:#11502c;
+  --card:#0e3a1f;
+  --border:rgba(255,255,255,0.12);
+  --border-hover:rgba(255,255,255,0.25);
+  --text:#f0f5ef;
+  --text-muted:rgba(255,255,255,0.65);
   --gradient:linear-gradient(135deg,#8EA832,#6B8020);
   --gradient-warm:linear-gradient(135deg,#E87325,#8EA832);
-  --gradient-hero:linear-gradient(160deg,#0D0F0A 0%,#1B2410 30%,#263318 60%,#1A2A0F 100%);
+  --gradient-hero:linear-gradient(135deg,#0a2e1a 0%,#0d3d22 30%,#00A854 70%,#1a8a4a 100%);
   --shadow-sm:0 2px 8px rgba(0,0,0,0.3);
   --shadow-md:0 8px 32px rgba(0,0,0,0.4);
   --shadow-lg:0 20px 60px rgba(0,0,0,0.5);
@@ -94,7 +94,7 @@ ul{list-style:none}
 
 /* ========== NAVBAR ========== */
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 0;transition:all var(--transition)}
-.navbar.scrolled{background:rgba(13,15,10,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--border);padding:12px 0}
+.navbar.scrolled{background:rgba(10,46,26,0.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 rgba(255,255,255,0.08);padding:12px 0}
 .navbar .container{display:flex;align-items:center;justify-content:space-between}
 .nav-brand{display:flex;align-items:center;gap:10px;font-size:1.4rem;font-weight:800;font-family:'Space Grotesk',sans-serif;letter-spacing:-0.03em}
 .nav-brand .bolt{width:36px;height:36px;background:var(--gradient);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
@@ -108,7 +108,7 @@ ul{list-style:none}
 .nav-cta::after{display:none!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
 .hamburger span{display:block;width:24px;height:2.5px;background:var(--text);border-radius:2px;transition:all var(--transition)}
-.mobile-menu{display:none;position:fixed;inset:0;background:rgba(13,15,10,0.97);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px;backdrop-filter:blur(20px)}
+.mobile-menu{display:none;position:fixed;inset:0;background:rgba(10,46,26,0.97);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:32px;backdrop-filter:blur(20px)}
 .mobile-menu.active{display:flex}
 .mobile-menu a{color:var(--text);font-size:1.5rem;font-weight:600}
 .mobile-close{position:absolute;top:24px;right:24px;font-size:2rem;color:var(--text);cursor:pointer;background:none;border:none}
@@ -130,8 +130,8 @@ ul{list-style:none}
 /* Hero Visual */
 .hero-visual{position:relative;display:flex;justify-content:center;align-items:center}
 .hero-phone{width:280px;height:560px;background:var(--dark-2);border-radius:40px;border:3px solid rgba(142,168,50,0.2);position:relative;overflow:hidden;box-shadow:var(--shadow-lg),0 0 80px rgba(142,168,50,0.08)}
-.hero-phone-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:28px;background:var(--dark);border-radius:0 0 16px 16px;z-index:3}
-.hero-phone-screen{padding:40px 16px 16px;height:100%;display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,#13150D,#1B1E12)}
+.hero-phone-notch{position:absolute;top:0;left:50%;transform:translateX(-50%);width:120px;height:28px;background:#082618;border-radius:0 0 16px 16px;z-index:3}
+.hero-phone-screen{padding:40px 16px 16px;height:100%;display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,#0d3d22,#11502c)}
 .phone-header{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--border)}
 .phone-avatar{width:36px;height:36px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;color:#fff}
 .phone-name{font-size:0.8rem;font-weight:600}
